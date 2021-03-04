@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文本格式化标签</title>
+</head>
+<body>
+    <!-- 文本格式化标签：就是通过标签来美化文本外观。 -->
+    <!-- 1.b和strong:都有加粗作用，且都是行级标签，但strong还有强调的作用，主要用于seo时，便于提取关键字 -->
+    <b>加粗</b>
+    <strong>加粗且强调</strong>
+
+    <!-- 2.i和em:使文字倾斜，且都是行级标签，em具有强调作用 --> 
+    <i>文字倾斜</i>
+    <em>文字倾斜且强调</em>
+
+    <!-- 3.pre:预格式化文本，保留换行和空格及宽度，文字的字号会小一号（块级标签（独占一行）） -->
+    <pre> 你好
+          jack </pre>
+
+    <!-- 4.small和big:分别让文字缩小一号和放大一号（行级标签（不会独占一行，且不识别宽高））。big在HTML5中淘汰掉了，并没有删除，目前还是可以用，尽量不要使用淘汰掉的 -->
+    <!-- 浏览器支持的最小字号为12px, 如果要显示比12px还小的字，需要做处理 -->
+    <p>我是正常大小</p>
+    <small>我是小一号文字</small>
+    <big>我是大一号文字</big>
+
+    <br>
+
+    <!-- 5.sub和sup:设置文本为下标和上标 -->
+    <p>X1+X2=Y</p>
+    <p>X<sub>1</sub>+X<sub>2</sub>=Y</p>
+    <p>X<sup>2</sup>+1=X</p>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>块级元素和行级元素</title>
+</head>
+<body>
+    <!--块级元素（相当于执行了display:block;操作)：
+            1）独占一行
+            2）宽度和高度是可控的，如果没有设置其宽度，将默认铺满整行
+            3）其内可以包含块级和行级元素
+        行级元素（相当于执行了display:inline;操作）：
+            1）不会独占一行，与相邻的行级元素在同一行，直到行占满为止，会自动掉到下一行
+            2）宽度和高度是不可控的
+            3）其内只能包含行级元素
+    -->
+    <div>div</div>
+    <p>p</p>
+    <p style="width: 300px; height: 50px; background: gray;">p</p>
+
+    <strong>strong</strong>
+    <span>span</span>
+    <!-- 高度和宽度没起作用 -->
+    <span style="width: 300px; height: 50px; background: gray;">span</span>
+
+    <!-- 1.块级标签转为行级标签,宽度和高度不起作用了 -->
+    <p style="display: inline; width: 300px; height: 50px; background: gray;">p:块级标签转为行级标签</p>
+    <!-- 2.行级标签转块级标签 -->
+    <span style="display: block; width: 300px; height: 50px; background: red;">行级标签转块级标签</span>
+</body>
+</html>
