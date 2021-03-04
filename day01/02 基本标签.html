@@ -1,0 +1,72 @@
+<!-- 输入 ！+ tab 或者 html:5 + tab 会自动生成文档结构 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- 如果用ie打开这个文件，默认用edge打开 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 移动端开发的设置 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>基本标签</title>
+</head>
+<body>
+    <!-- 1.div:用来布局，没有具体含义，层的意思 -->
+    <div>
+        hello
+        <div>jack</div>
+    </div>
+
+    <!-- 2.hx:标题,从1级到6级，1级标题最大，6级最小，会自动加粗，有默认字号 -->
+    <h1>前端课程</h1>
+    <h2>java开发</h2>
+    <h6>大前端开发</h6>
+
+    <!-- 3.p:段落,相当于一个回车 -->
+    <p>我校复试基本分数线预计于3月中旬公布，学校将根据上级主管部门的要求及疫情防控情况，
+        在确保安全的前提下，做好2021年硕士研究生招生复试组织工作。请广大考生安心进行复试准备，
+        并随时关注西安交通大学研究生招生信息网（http://yz.xjtu.edu.cn）、“西交研招”微信公众号及所报考学院网站发布的复试时间、
+        复试要求等相关信息。</p>
+    <p>我校复试基本分数线预计于3月中旬公布，学校将根据上级主管部门的要求及疫情防控情况，
+    在确保安全的前提下，做好2021年硕士研究生招生复试组织工作。请广大考生安心进行复试准备，
+    并随时关注西安交通大学研究生招生信息网（http://yz.xjtu.edu.cn）、“西交研招”微信公众号及所报考学院网站发布的复试时间、
+    复试要求等相关信息。</p>
+    
+    <!-- 4.br:换行 -->
+    <p>我校复试基本分数线预计于3月中旬公布，学校将根据上级主管部门的要求及疫情防控情况，<br>
+        在确保安全的前提下，做好2021年硕士研究生招生复试组织工作。请广大考生安心进行复试准备，<br>
+        并随时关注西安交通大学研究生招生信息网（http://yz.xjtu.edu.cn）、“西交研招”微信公众号及所报考学院网站发布的复试时间、<br>
+        复试要求等相关信息。</p>
+
+    <!-- 5.hr:生成一条水平线，主要起装饰作用 -->
+    <hr>
+    <hr width="80%" align="center" color="red" height="2px">
+
+    <!-- 6.a:实现连接跳转, target:表示跳转方式，_blank:表示新开一个窗口打卡,_self:表示在当前窗口打开,默认是_self -->
+    <a href="http://baidu.com" title="百度">百度</a>
+    <a href="01 html文档结构.html" target="_blank">文档结构</a>
+    <a href="01 html文档结构.html" target="_self">文档结构</a>
+
+    <!-- 7.img:用来加载外部图片/图像。src:用来设定用来加载的图片/图像路径; alt:当图片加载不成功，显示其内容，加载成功不显示 -->
+    <img src="https://img.alicdn.com/tps/i3/T1OjaVFl4dXXa.JOZB-114-114.png" title="test" alt="淘宝">
+    <img src="https://img.alicdn.com/tps/i3/345245T1.png" alt="淘宝">
+
+    <!-- 8.span:作用与div一样，都是用来布局的，不同的是div单独占一行，而span不会; span用于行内布局-->
+    <div>div1</div>
+    <div>div2</div>
+    <span>span1</span>
+    <span>span2</span>
+
+    <!-- 9.ul和ol, 前者是无序列表，后者是有序列表，他们的列表内容用的都是li标签(快速输入: ul>li{li$}*3) -->
+    <ul>
+        <li>li1</li>
+        <li>li2</li>
+        <li>li3</li>
+    </ul>
+    <ol>
+        <li>li1</li>
+        <li>li2</li>
+        <li>li3</li>
+    </ol>
+    
+</body>
+</html>
