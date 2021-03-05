@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+</head>
+<body>
+    <!-- 
+        table主要用于呈现格式化数据，表格是由行和列组成
+        早期用table布局，但现在用div布局 
+        
+        格式:
+            <table>
+                <tr> 一行多列
+                    <th></th> 表头   
+                    <th></th>
+                    ...
+                <tr>
+                <tr> 一行多列
+                    <td></td>   
+                    <td></td>
+                    ...
+                <tr>
+                ...
+            </table>
+        
+        table属性：
+            border:表格边框，默认单位像素
+            width:表格宽度
+            align:表格对齐方式，left(默认值/center/right
+            cellspacing:单元格边框间距
+            cellpadding:单元格文本与边框的距离
+
+    -->
+    <!-- 两行三列： table>tr*2>td*3-->
+    <!-- 
+        cellpadding:是内容离边框的距离
+     -->
+    <table border="1" width="400" cellspacing="0" cellpadding="10" align="center"> 
+        <tr>
+            <th>学号</th>  <!--th:表头,主要对下面内容其说明作用，th的内容会自动加粗，居中-->
+            <th>姓名</th>
+            <th>住址</th>
+        </tr>
+        <tr>
+            <td>001</td>
+            <td>张三</td>
+            <td>北京</td>
+        </tr>
+    </table>
+</body>
+</html>

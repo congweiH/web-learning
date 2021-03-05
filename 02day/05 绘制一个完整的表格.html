@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>绘制完整表格</title>
+</head>
+<body>
+    <!-- 
+        完整表格组成（四部分）：
+            caption(标题)
+            thead(表头)
+            tbody(表体)
+            tfoot(表尾)
+    -->
+    <table border="1" align="center" width="500">
+        <caption>学生信息表</caption>
+        <thead>
+            <tr>
+                <th>学号</th>
+                <th>姓名</th>
+                <th>家庭住址</th>
+                <th>备注</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td align="center">001</td>
+                <td>张三</td>
+                <td>上海</td>
+                <td>该生为三好学生</td>
+            </tr>
+            <tr>
+                <td align="center">002</td>
+                <td>李四</td>
+                <td>北京</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td align="center">003</td>
+                <td>张红</td>
+                <td>深圳</td>
+                <td></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">附注:003为优秀学生</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

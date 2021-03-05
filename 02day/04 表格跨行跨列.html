@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table跨行跨列</title>
+</head>
+<body>
+    <!-- 
+        rowspan:跨行
+        colspan:跨列
+     -->
+    <!-- table[border=1 width=500 align=center]>tr*3>td{内容$$}*3 -->
+    <table border="1" width="500" align="center">
+        <tr>
+            <!-- valign：垂直对齐，top/middle/bottom -->
+            <td rowspan="2" align="center" valign="top">内容1</td>
+            <td>内容2</td>
+            <td rowspan="3">内容3</td>
+        </tr>
+        <tr>
+            <td>内容6</td>
+        </tr>
+        <tr align="center">
+            <td>内容8</td>
+            <td>内容9</td>
+        </tr>
+    </table>
+
+    <br><br><br>
+
+    <table border="1" width="500" align="center">
+        <tr>
+            <td rowspan="2">内容1</td>
+            <td colspan="2">内容2</td>
+        </tr>
+        <tr>
+            <td>内容5</td>
+            <td>内容6</td>
+        </tr>
+        <tr>
+            <td colspan="3">内容7</td>
+        </tr>
+    </table>
+</body>
+</html>
