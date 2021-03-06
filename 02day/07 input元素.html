@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input类</title>
+</head>
+<body>
+    <!-- 
+        表单元素有
+        input类:主要用来输入，或发出指令
+            type: text/password/radio/checkbox/file/button/image/submit/reset
+                1.text:单行文本输入框,也是默认值
+                    属性: placehoder(提示文本)
+                         name(命名，后台用于区别)
+                         id(用于后台唯一标识)
+                         minlength/maxlength(最少/多输入的字符长度)
+                         disabled(失效)
+                         readonly(只读)
+                         value(默认值初始值)
+                         pattern(正则匹配)
+                2.password:密码框
+                    属性与text一样
+                3.radio:单选钮,通常是两项以上
+                    属性: name（必须有,name相同的radio同时只能有一个被选中）
+                          value
+                          checked(选中)
+                4.checkbox:复选按钮，可以用来选择0项，1项或多项
+                    属性：name（必须有,name相同的radio同时只能有一个被选中）
+                          value
+                          checked(选中)
+                5.file:文件上传
+                6.button:普通按钮,通常用于调用脚本代码，发出指令
+                    属性：value(按钮上的文字)
+                          disabled
+                7.image:图片按钮，用法与button一样
+                    属性：src(用来加载图片，用作value值)
+                          title
+                          alt
+                    它也有提交功能，和submit功能一样
+                8.submit:提交按钮,用来将表单数据提交到后台
+                    属性：value(按钮上显示的题目)
+                9.reset:重置按钮，还原表单初始状态
+                    属性：value,同上
+    -->
+    <form action="test.php">
+        <!-- 1.text -->
+        <input type="text" name="test" placeholder="请输入一个数字" value="100" disabled="disabled">
+        <br>
+        <input type="text" name="test" placeholder="请输入一个数字" value="100" readonly="readonly">
+        <br>
+        <input type="text" name="test" placeholder="请输入一个数字" value="100" minlength="3" maxlength="6">
+        <br><br>
+        <!-- 2.password -->
+        <input type="password" name="test">
+        <br><br>
+        <!-- 3.radio -->
+        <input type="radio" name="sex" checked="checked"> 男
+        <input type="radio" name="sex"> 女
+        <br>
+        <input type="radio" name="num" checked="checked"> 1
+        <input type="radio" name="num"> 2
+        <br><br>
+        <!-- 4.checkbox -->
+        <input type="checkbox" name="hobby" checked="checked"> 听音乐 
+        <input type="checkbox" name="hobby"> 码代码
+        <input type="checkbox" name="hobby"> 其他
+        <br><br>
+        <!-- 5.file -->
+        <input type="file">
+        <br><br>
+        <!-- 6.button -->
+        <input type="button" value="确定">
+        <br><br>
+        <!-- 7.image -->
+        <input type="image" src="https://img.alicdn.com/tps/i3/T1OjaVFl4dXXa.JOZB-114-114.png" title="图片按钮" alt="">
+        <br><br>
+        <!-- 8.submit -->
+        <input type="submit" value="提交">
+        <br><br>
+        <!-- 9.reset -->
+        <input type="reset" value="重置">
+    </form>
+</body>
+</html>

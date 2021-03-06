@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>select</title>
+</head>
+<body>
+    <!-- 
+        select:下拉列表框，默认用于单项选择
+            用option呈现每个选项
+                属性：multiple:实现多选, 这时的下拉列表框变成了列表框
+                      size 呈现几个选项
+    -->
+    <form action="#">
+        <!-- label的for对应于select里面的id -->
+        <label for="sex">性别：</label>
+        <select id="sex">
+            <option value="male">男</option>
+            <option value="female">女</option>
+        </select>
+        <br>
+        <label for="course">选课：</label>
+        <select id="course" multiple="multiple" size="2">
+            <option value="语文">语文</option>
+            <option value="数学">数学</option>
+            <option value="计算机">计算机</option>
+            <option value="其他">其他</option>
+        </select>
+    </form>
+</body>
+</html>

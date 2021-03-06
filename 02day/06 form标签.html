@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form标签</title>
+</head>
+<body>
+    <!-- 
+        form表单标签是所有标签最核心标签之一。它是用来实现前后端交互的一个重要标签。
+
+        常用属性：
+            name:表单名称
+            action:表单数据提交的地方（通常是一个后台文件名（.jsp/.php/.asp/.aspx/.py等），或网址），如果是#,表示提交到当前文件下
+            method:前端提交数据到后端的方法，主要有：get和post,默认是get
+
+            表单元素分为：
+                input类
+                textarea类
+                select类
+                button类
+     -->
+    <form name="stuInfo" action="test.php" method="POST">
+        <input type="text" name="userName" placeholder="请输入姓名">
+        <input type="submit" value="提交">
+    </form>
+</body>
+</html>
