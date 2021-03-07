@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css引入方式</title>
+    <!-- 3.引入外部样式文件 -->
+    <!-- link:css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- 2.内部样式 -->
+    <style>
+        @import "css/test.css"; /* 4. 导入外部样式 */
+        p {
+            background-color: #eeeeee;
+            font-size: 18px;
+            font-style: italic;
+        }
+    </style>
+    
+</head>
+<body>
+    <!-- 
+        css引入方式: 行间样式、内部样式、外部样式、导入外部样式
+            1.行间样式:直接在标签上书写样式
+            2.内部样式:在文件的内部书写样式
+                <style>
+                    样式内容
+                </style>
+            3.外部样式:先创建css文件,在用link标签引入这个文件
+            4.导入外部样式:先创建css文件, 在style标签中用import导入这个文件
+
+        4种引入css方式的区别:
+            行间样式只作用于当前标签, 而内部样式作用于当前文件, 外部样式可以被多个html引用
+            在实际项目开发中, 最好使用外部样式.
+            外部样式分为link引入和import引入两种方式,这两种方式主要区别:
+                1. link在页面加载的同时加载,import需要网页完全加载完才加载css
+                2. link支持使用js控制dom去改变样式;而import不支持
+            一般使用link导入,而不是import
+    -->
+
+    <!-- 1.行间样式(嵌入式样式) -->
+    <div style="color: olive;width: 100px;border: 1px solid blue;">行间样式测试1</div>
+    <div>行间样式测试1</div>
+
+    <p>内部样式测试1</p>
+    <p>内部样式测试1</p>
+
+    <span>外部样式测试</span>
+    <span>外部样式测试</span>
+
+    <div class="box">导入外部样式</div>
+    <div class="box">导入外部样式</div>
+    <div class="box">导入外部样式</div>
+
+    <em class="box">同学们好!</em>
+</body>
+</html>

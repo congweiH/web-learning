@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>选择器分组</title>
+
+    <style>
+        /* 1.分组 */
+        h1, .box, p {
+            color: red;
+        }
+        p {
+            width: 100px;
+            background-color: #999999;
+            color: blue;    /* 因为出现在后面，后面的会覆盖前面样式 */
+        }
+        /* 2.样式继承 */
+        .test {
+            font-size: 18px;
+        }
+        /* 继承了父元素传来的样式 */
+        .test span {
+            font-weight: bold;
+        }
+        /* 改写父元素传过来的样式 */
+        .test span {
+            font-weight: bold;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        选择器分组：让多个选择器（元素）具有相同的样式，防止写多次
+        选择器的继承：子元素的样式可以继承父元素的样式
+     -->
+    <h1>h1</h1>
+    <div class="box">box</div>
+    <p>p</p>
+
+    <div class="test">这是一段测试<span>内容</span>。</div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css选择器</title>
+    <style>
+        /* 1.* */
+        * {
+            color: red;
+        }
+        /* 2.标签选择器 */
+        span {
+            display: block;
+            margin-right: 20px;
+            border: 1px solid gray;
+        }
+        /* 3.类选择器 */
+        .wrapper {
+            color: aqua;
+        }
+        /* 4.id选择器 */
+        #content {
+            color: blue;
+        }
+        /* 5.派出选择器 */
+        .box2 li {       /* 选择box2的所有li */
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        1）*:匹配html中所有元素（注意：*的性能差，因为它要匹配所有元素，所以在开发时，不建议使用）
+        2）标签选择器：用来匹配标签
+        3）类选择器：用来选择class命名的标签
+        4）id选择器：用来选择用id命名的标签
+        5）派出选择器：根据上下文来确定要选择的标签
+        6) 伪类选择器（后面学）
+     -->
+    <p>这是p标签</p>
+    <strong>这是strong标签</strong>
+
+    <span>这是span标签</span>
+    <div>这是div标签</div>
+
+    <div class="wrapper">这是div标签</div>
+
+    <p id="content">这是内容</p>
+
+    <ul class="box1">
+        <li>li1</li>
+        <li>li2</li>
+        <li>li3</li>
+    </ul>
+    <ul class="box2">
+        <li>li1</li>
+        <li>li2</li>
+        <li>li3
+            <ul>
+                <li>subli1</li>
+                <li>subli2</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>
